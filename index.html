@@ -7,7 +7,7 @@
     <title>Careway Medical</title>
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" 
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/css/uikit.min.css">
@@ -21,14 +21,18 @@
 
     <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top" 
         class="header uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
-        <nav class="uk-navbar-container">
+        <nav class="uk-navbar-container uk-navbar-transparent">
             <div class="uk-container">
                 <div uk-navbar>
         
                     <div class="uk-navbar-left">
         
                         <ul class="uk-navbar-nav">
-                            <li ><a href="#" class="uk-navbar-item uk-logo"><img src="./images/logofbcropped.jpg" alt=""></a></li>
+                            <li>
+                                <a href="#" class="uk-navbar-item uk-logo">
+                                    <img src="./images/logo.png" alt="">
+                                </a>
+                            </li>
                             
                         </ul>
         
@@ -80,22 +84,48 @@
         </nav>
     </header>
 
-    <section class="home__slider">
+    <div class="home__slider">
         <div class="swiper mySwiper homeSwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">
+                <img src="./images/doctor-inject-treatment-serum-vitamins-hair-fall.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/patient-suffering-from-hair-loss-consultation-with-doctor.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/woman-dentist-stomatologist-mask-working-oral-health-assessment.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-arrow-right-long"></i>
             </div>
             <div class="swiper-pagination"></div>
-          </div>
-    </section>
+        </div>
+        <div class="home__slidertext">
+            <h1>Rediscover Your Confidence </h1>
+            <!-- <h1>Unlock Your Confidence with Perfect Hair Restoration!</h1> -->
+            <p>Welcome to our clinic, your pathway to natural-looking results from industry-leading 
+                surgeons and injectors. Skin | Hair | Dental | ENT clinic in Chitwan</p>
+        </div>
+    </div>
+
+    <div class="overlay__nav">
+        <div class="uk-container">
+            <ul class="overlaynav__wrap flex__wrap ">
+                <li><a href="">Hair</a></li>
+                <li><a href="">Skin</a></li>
+                <li><a href="">Dental</a></li>
+                <li><a href="">ENT</a></li>
+            </ul>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 

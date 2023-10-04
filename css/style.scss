@@ -2,11 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    color: #999;
-    $green: #69a751;
-    $blue: #114b55;
+    color: #888;
 }
+$light: #3E891F;
+$dark: #104A52;
 
 ul {
     list-style: none;
@@ -20,7 +19,8 @@ a {
 }
 
 a:hover {
-    color: #23527c;
+    color: inherit;
+    text-decoration: none;
 }
 
 h1,
@@ -29,8 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500 !important;
+    font-family: 'Merriweather', sans-serif;
 }
 
 h4 {
@@ -45,6 +44,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .flex__wrap.sb {
@@ -54,17 +54,175 @@ img {
 header{
     
     .uk-navbar{
-        padding: 10px 0;
+        padding: 2px 0;
     }
 
-    .uk-logo{
+}
 
-        width: 204px;
+.home__slider{
+    position: relative;
+
+    .home__slidertext{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        // left: 160px;
+        width: 800px;
+        z-index: 1;
+        color: #fff;
+
+        h1{
+            
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 1.24;
+            color: #fff;
+            margin-bottom: 48px;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 300;
+        }
     }
 
 }
 
 .homeSwiper{
-    height: 90vh;
+    height: calc(100vh - 84px);
     background-color: #69a751;
+
+    .swiper-wrapper{
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #00000066;
+        }
+    }
+
+    .swiper-button-next {
+        right: 50px;
+        width: 80px;
+        height: 80px;
+        color: #444867;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all .4s;
+        display: flex;
+        top: auto;
+        bottom: 50px;
+        left: auto;
+
+        &::after {
+            content: none;
+        }
+
+        i{
+            
+            font-size: 18px;
+            transition: all .4s;
+        }
+
+        &:hover{
+
+            background-color: transparent;
+
+            i {
+
+                color: #fff;
+            }
+        }
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        
+        right: 150px;
+        left: auto;
+        top: auto;
+        bottom: 80px;
+    }
+
+    .swiper-pagination{
+
+        .swiper-pagination-bullet{
+            
+            width: 10px;
+            height: 10px;
+            transition: background-color .1s, color .1s;
+        }
+
+    }
+    
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next {
+        transform: scale(.88);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next-next {
+        transform: scale(.66);
+    }
+
+    .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+        transform: scale(.66);
+        opacity: 0.8;
+        background-color: #ffffff;
+    }
+}
+
+.overlay__nav{
+
+    // position: absolute;
+    // top: calc(80vh + 100px);
+    // z-index: 2;
+    // width: 100%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+
+    .overlaynav__wrap{
+        background-color: $dark;
+        padding: 40px;
+        border-radius: 50px;
+        margin: 80px 0;
+        
+        li {
+            padding: 2px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-align: center;
+            border-right: 1px solid #fff;
+
+            a{
+                
+                color: #fff;
+                transition: all 0.3s;
+                font-weight: 800;
+            }
+
+            &:hover a{
+                color: $light;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
 }

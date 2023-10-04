@@ -2,8 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  color: #999;
+  color: #888;
 }
 
 ul {
@@ -19,7 +18,8 @@ a {
 }
 
 a:hover {
-  color: #23527c;
+  color: inherit;
+  text-decoration: none;
 }
 
 h1,
@@ -28,8 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500 !important;
+  font-family: 'Merriweather', sans-serif;
 }
 
 h4 {
@@ -49,6 +48,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex__wrap.sb {
@@ -58,15 +60,172 @@ img {
 }
 
 header .uk-navbar {
-  padding: 10px 0;
+  padding: 2px 0;
 }
 
-header .uk-logo {
-  width: 204px;
+.home__slider {
+  position: relative;
+}
+
+.home__slider .home__slidertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+  z-index: 1;
+  color: #fff;
+}
+
+.home__slider .home__slidertext h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.24;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.home__slider .home__slidertext p {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .homeSwiper {
-  height: 90vh;
+  height: calc(100vh - 84px);
   background-color: #69a751;
+}
+
+.homeSwiper .swiper-wrapper::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #00000066;
+}
+
+.homeSwiper .swiper-button-next {
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  color: #444867;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: auto;
+  bottom: 50px;
+  left: auto;
+}
+
+.homeSwiper .swiper-button-next::after {
+  content: none;
+}
+
+.homeSwiper .swiper-button-next i {
+  font-size: 18px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.homeSwiper .swiper-button-next:hover {
+  background-color: transparent;
+}
+
+.homeSwiper .swiper-button-next:hover i {
+  color: #fff;
+}
+
+.homeSwiper .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .homeSwiper .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  right: 150px;
+  left: auto;
+  top: auto;
+  bottom: 80px;
+}
+
+.homeSwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  -webkit-transition: background-color .1s, color .1s;
+  transition: background-color .1s, color .1s;
+}
+
+.homeSwiper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.homeSwiper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next {
+  -webkit-transform: scale(0.88);
+          transform: scale(0.88);
+}
+
+.homeSwiper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet.swiper-pagination-bullet-active-next-next {
+  -webkit-transform: scale(0.66);
+          transform: scale(0.66);
+}
+
+.homeSwiper .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  -webkit-transform: scale(0.66);
+          transform: scale(0.66);
+  opacity: 0.8;
+  background-color: #ffffff;
+}
+
+.overlay__nav .overlaynav__wrap {
+  background-color: #104A52;
+  padding: 40px;
+  border-radius: 50px;
+  margin: 80px 0;
+}
+
+.overlay__nav .overlaynav__wrap li {
+  padding: 2px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+
+.overlay__nav .overlaynav__wrap li a {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 800;
+}
+
+.overlay__nav .overlaynav__wrap li:hover a {
+  color: #3E891F;
+}
+
+.overlay__nav .overlaynav__wrap li:last-child {
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
