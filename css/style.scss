@@ -75,7 +75,7 @@ header{
 
         h1{
             
-            font-size: 72px;
+            font-size: 88px;
             font-weight: 700;
             line-height: 1.24;
             color: #fff;
@@ -83,7 +83,7 @@ header{
         }
 
         p{
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 300;
         }
     }
@@ -103,7 +103,7 @@ header{
             height: 100%;
             left: 0;
             top: 0;
-            background-color: #00000066;
+            background-color: #00000077;
         }
     }
 
@@ -183,7 +183,7 @@ header{
     }
 }
 
-.overlay__nav{
+.service__tab{
 
     // position: absolute;
     // top: calc(80vh + 100px);
@@ -192,10 +192,10 @@ header{
     // left: 50%;
     // transform: translate(-50%, -50%);
 
-    .overlaynav__wrap{
+    .servicetab__wrap{
         background-color: $dark;
         padding: 40px;
-        border-radius: 50px;
+        border-radius: 10px;
         margin: 80px 0;
         
         li {

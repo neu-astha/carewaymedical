@@ -80,7 +80,7 @@ header .uk-navbar {
 }
 
 .home__slider .home__slidertext h1 {
-  font-size: 72px;
+  font-size: 88px;
   font-weight: 700;
   line-height: 1.24;
   color: #fff;
@@ -88,7 +88,7 @@ header .uk-navbar {
 }
 
 .home__slider .home__slidertext p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -104,7 +104,7 @@ header .uk-navbar {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #00000066;
+  background-color: #00000077;
 }
 
 .homeSwiper .swiper-button-next {
@@ -186,14 +186,14 @@ header .uk-navbar {
   background-color: #ffffff;
 }
 
-.overlay__nav .overlaynav__wrap {
+.service__tab .servicetab__wrap {
   background-color: #104A52;
   padding: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   margin: 80px 0;
 }
 
-.overlay__nav .overlaynav__wrap li {
+.service__tab .servicetab__wrap li {
   padding: 2px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,18 +214,18 @@ header .uk-navbar {
   border-right: 1px solid #fff;
 }
 
-.overlay__nav .overlaynav__wrap li a {
+.service__tab .servicetab__wrap li a {
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 800;
 }
 
-.overlay__nav .overlaynav__wrap li:hover a {
+.service__tab .servicetab__wrap li:hover a {
   color: #3E891F;
 }
 
-.overlay__nav .overlaynav__wrap li:last-child {
+.service__tab .servicetab__wrap li:last-child {
   border: none;
 }
 /*# sourceMappingURL=style.css.map */
