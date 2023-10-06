@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  color: #888;
+  color: #333;
 }
 
 ul {
@@ -29,10 +29,15 @@ h4,
 h5,
 h6 {
   font-family: 'Merriweather', sans-serif;
+  color: #3E891F;
 }
 
 h4 {
   font-size: 22px;
+}
+
+p {
+  margin: 0;
 }
 
 img {
@@ -57,6 +62,56 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.button {
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #104A52;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  height: 1px;
+  background: #104A52;
+  width: 100%;
+  right: 0;
+  -webkit-transition: width ease .25s;
+  transition: width ease .25s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  height: 1px;
+  background: #104A52;
+  width: 0%;
+  left: 0;
+  -webkit-transition: width ease .25s;
+  transition: width ease .25s;
+}
+
+.button:hover::before {
+  width: 0;
+}
+
+.button:hover::after {
+  width: 100%;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+header {
+  background-color: #fff;
 }
 
 header .uk-navbar {
@@ -143,9 +198,6 @@ header .uk-navbar {
 
 .homeSwiper .swiper-button-next:hover {
   background-color: transparent;
-}
-
-.homeSwiper .swiper-button-next:hover i {
   color: #fff;
 }
 
@@ -190,7 +242,7 @@ header .uk-navbar {
   background-color: #104A52;
   padding: 40px;
   border-radius: 10px;
-  margin: 80px 0;
+  margin-bottom: 64px;
 }
 
 .service__tab .servicetab__wrap li {
@@ -227,5 +279,177 @@ header .uk-navbar {
 
 .service__tab .servicetab__wrap li:last-child {
   border: none;
+}
+
+.service__tab .uk-switcher img {
+  border-radius: 10px;
+  height: 324px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service__tab .uk-switcher .servicetab__desc {
+  max-height: 212px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.service__tab .uk-switcher .servicetab__desc p {
+  margin-bottom: 16px;
+}
+
+.service__tab .uk-switcher .button {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.testimonials__sec {
+  background-color: #104A52;
+  position: relative;
+}
+
+.testimonials__sec .rev__info {
+  color: #fff;
+  font-size: 18px;
+}
+
+.testimonials__sec .rev__info h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-bottom: 24px;
+}
+
+.testimonials__sec .testimonials .swiper-slide {
+  width: 464px;
+}
+
+.testimonials__sec .testimonials .testimonials-text-wrapper {
+  height: 320px;
+  background-color: #f6f3ee;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff1a;
+  color: #fff;
+}
+
+.testimonials__sec .testimonials .testimonials-text-wrapper p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.testimonials__sec .testimonials .testimonials-text-wrapper .testimonials-slider-author {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials__sec .testimonials .testimonials-text-wrapper .testimonials-slider-author p {
+  line-height: 1;
+}
+
+.testimonials__sec .testimonials .testimonials-text-wrapper .testimonials-slider-author img {
+  width: 68px;
+  height: 68px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: block;
+}
+
+.testimonials__sec .swiper-button-prev {
+  left: 180px;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: auto;
+  bottom: 80px;
+}
+
+.testimonials__sec .swiper-button-prev::after {
+  content: none;
+}
+
+.testimonials__sec .swiper-button-prev i {
+  font-size: 18px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.testimonials__sec .swiper-button-prev:hover {
+  background-color: #fff;
+  color: #444867;
+}
+
+.testimonials__sec .swiper-button-next {
+  left: 280px;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: auto;
+  bottom: 80px;
+}
+
+.testimonials__sec .swiper-button-next::after {
+  content: none;
+}
+
+.testimonials__sec .swiper-button-next i {
+  font-size: 18px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.testimonials__sec .swiper-button-next:hover {
+  color: #444867;
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 120px;
 }
 /*# sourceMappingURL=style.css.map */
