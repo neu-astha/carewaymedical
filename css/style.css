@@ -170,7 +170,6 @@ header.uk-active .cropped {
 
 .homeSwiper {
   height: calc(100vh - 84px);
-  background-color: #69a751;
 }
 
 .homeSwiper .swiper-wrapper::after {
