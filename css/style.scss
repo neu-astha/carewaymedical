@@ -63,10 +63,13 @@ section{
 
 .button{
     position: relative;
+    font-size: 14px;
     font-weight: 700;
+    line-height: 24px;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     color: $dark;
+    font-family: 'Lato', sans-serif;
 
     &::before{
 
@@ -112,6 +115,24 @@ header{
     
     .uk-navbar{
         padding: 2px 0;
+    }
+
+    .cropped {
+        display: none;
+        transition: 0.4s ease;
+    }
+
+    &.uk-active{
+
+        .full {
+            display: none;
+            transition: 0.4s ease;
+        }
+
+        .cropped {
+            display: block;
+            transition: 0.4s ease;
+        }
     }
 }
 
@@ -167,7 +188,7 @@ header{
         right: 50px;
         width: 80px;
         height: 80px;
-        color: #444867;
+        color: #33333361;
         background-color: #fff;
         border: 1px solid #fff;
         border-radius: 100%;
@@ -297,10 +318,80 @@ header{
     }
 }
 
+
+.homeform{
+
+    padding-top: 64px ;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 49%, #104a52 50%, #104a52 100%);
+    
+    form{
+
+        box-shadow: #104a5236 0px 8px 24px;
+        background-color: #fff;
+        padding: 40px;
+    }
+}
+
+form{
+
+    input, select, textarea{
+        
+        width: 96%;
+        font-size: 14px;
+        height: 56px;
+        margin-bottom: 24px;
+        padding: 8px 16px;
+        border-width: 1px;
+        border-color: transparent transparent #104a5236;
+        font-family: inherit;
+
+        &::placeholder{
+            color: #333333;
+        }
+
+        &:focus-visible {
+
+            border-bottom-color: #104A52;
+            outline: 0;
+
+            &::placeholder {
+                color: transparent !important;
+            }
+        }
+
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    select{
+
+        height: 73.6px;
+        width: calc(96% + 34px);
+        padding: 8px 14px;
+    }
+
+    textarea{
+        
+        height: 40px;
+        padding-top: 24px;
+    }
+
+    button{
+        border: 0;
+        background-color: transparent;
+        margin-top: 32px;
+    }
+}
+
+
 .testimonials__sec{
 
-    background-color: #104A52;
+    background-color: #104951;
     position: relative;
+    padding-top: 120px;
 
     .rev__info{
 
@@ -310,9 +401,11 @@ header{
         h2{
             color: #fff;
             font-size: 48px;
-            font-weight: 700;
-            line-height: 1.2em;
             margin-bottom: 24px;
+        }
+
+        p{
+            font-weight: 300;
         }
     }
 
@@ -334,7 +427,7 @@ header{
             color: #fff;
 
             p{
-                font-size: 18px;
+                font-size: 19px;
                 line-height: 1.5em;
             }
 
@@ -357,8 +450,7 @@ header{
                 }
             }
         }
-    }
-    
+    } 
 
     .swiper-button-prev {
         left: 180px;
@@ -388,8 +480,13 @@ header{
         &:hover{
 
             background-color: #fff;
-            color: #444867;
+            color: #333333;
+
+            .swiper-button-disabled{
+                color: #333333bf;
+            }
         }
+            
     }
 
     .swiper-button-next {
@@ -419,13 +516,166 @@ header{
 
         &:hover{
           
-            color: #444867;
+            color: #333333;
             background-color: #fff;
+            
+            .swiper-button-disabled{
+                color: #333333bf;
+            }
 
+        }
+    }
+
+    .swiper-button-disabled{
+        color: #ffffff7a;
+    }
+}
+
+.blog__wrap{
+
+    .blog{
+        
+        height: 360px;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .uk-overlay{
+            top: 70%;
+            padding: 26px;
+            transition: 0.6s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h5{
+                height: 56px;
+                font-size: 20px;
+                overflow: hidden;
+            }
+
+            p{
+                display: -webkit-box;
+                max-width: 100%;
+                height: 136px;
+                line-height: 1.7;
+                -webkit-line-clamp: 5;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &:hover{
+            
+            .uk-overlay{
+
+                top: 0%;
+                height: 308px;
+
+            }
         }
     }
 }
 
 footer{
-    margin-top: 120px;
+    background-color: #81aaae;
+    padding: 80px 0 48px;
+    color: #104951;
+
+    .footer__wrap{
+        margin-top: 104px;
+    }
+
+    h2{
+        color: #104951;
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-bottom: 36px;
+    }
+
+    .col{
+        margin-bottom: 56px;
+
+        // &:last-of-type{
+        //     margin-bottom: 0;
+        // }
+
+        .uk-flex li{
+            margin-right: 16px;
+
+            span{
+                
+                border: 1px solid #10402c;
+                border-radius: 50px;
+                padding: 8px;
+            }
+        }
+
+        li{
+            margin-bottom: 10px;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+
+        a{
+            color: #104951;
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        img{
+            width: 200px;
+        }
+    }
+
+    .form{
+        margin-top: 104px;
+
+        form{
+            
+            margin-top: 48px;
+
+            input{
+
+                background-color: transparent;
+                height: 24px;
+                padding: 8px 0;
+
+                &::placeholder{
+
+                    color: #104951;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        h6{
+
+            color: #104951;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+    }
+
+    button{
+        border: 0;
+        background-color: transparent;
+    }
+
+    .footer__bottom{
+
+        span{
+
+            font-size: 14px;
+        }
+    }
 }

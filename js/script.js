@@ -15,7 +15,7 @@ var swiper = new Swiper(".homeSwiper", {
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".fa-solid",
+    nextEl: ".homeslidernav.swiper-button-next",
   },
 });
 
@@ -38,7 +38,7 @@ var swiper = new Swiper(".testimonials", {
   slidesPerView: "auto",
   spaceBetween: 40,
   navigation: {
-    nextEl: ".fa-arrow-right-long",
-    prevEl: ".fa-arrow-left-long",
+    nextEl: ".testimonialnav.swiper-button-next",
+    prevEl: ".testimonialnav.swiper-button-prev",
   },
 });
