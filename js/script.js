@@ -33,6 +33,40 @@ var swiper = new Swiper(".beforeafter", {
   },
 });
 
+var swiper = new Swiper(".beforeafterimages", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  speed: 5000,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: true,
+  },
+});
+
+var mySwiper = new Swiper(".beforeaftervideos", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  speed: 5000,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: true,
+    pauseOnMouseEnter: true,
+  },
+});
+$('.beforeaftervideos').on('mouseenter', function(e){
+  console.log('stop autoplay');
+  mySwiper.autoplay.stop();
+})
+$('.beforeaftervideos').on('mouseleave', function(e){
+  console.log('start autoplay');
+  mySwiper.autoplay.start();
+})
+
+
 
 var swiper = new Swiper(".testimonials", {
   slidesPerView: "auto",

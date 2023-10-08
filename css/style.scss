@@ -109,6 +109,24 @@ section{
         }
     }
 }
+
+.uk-overlay-default {
+    background: #0e231acc;
+}
+
+.uk-breadcrumb>:last-child>a:not([href]), .uk-breadcrumb>:last-child>span {
+    color: #fff;
+}
+.uk-breadcrumb>*>* {
+    font-size: 16px;
+    color: #dcdcdc;
+}
+
+h1.pagetitle {
+    font-size: 64px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
   
 header{
     background-color: #fff;
@@ -676,5 +694,45 @@ footer{
 
             font-size: 14px;
         }
+    }
+}
+
+.page__intro{
+    padding: 96px 0 24px;  
+
+    p{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+.page{
+
+    h2{
+        padding-top: 24px;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+}
+
+.results{
+
+    .uk-position-cover {
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s ease-out;
+
+        svg{
+
+            width: 32px;
+            height: 32px;
+            color: #fff;
+        }
+    }
+
+    .swiper-slide:hover .uk-position-cover {
+        opacity: 1;
+        visibility: visible;
     }
 }
