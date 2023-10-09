@@ -126,10 +126,22 @@ section {
   color: #dcdcdc;
 }
 
+.uk-lightbox {
+  background: #000000de;
+}
+
 h1.pagetitle {
   font-size: 64px;
   line-height: 1.4;
   margin-bottom: 32px;
+}
+
+.page__intro p {
+  margin-bottom: 16px;
+}
+
+.page__intro p:last-of-type {
+  margin-bottom: 0;
 }
 
 header {
@@ -613,6 +625,7 @@ form button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffffffa3;
 }
 
 .blog__wrap .blog .uk-overlay h5 {
@@ -768,8 +781,49 @@ footer .footer__bottom span {
   color: #fff;
 }
 
-.results .swiper-slide:hover .uk-position-cover {
+.results .post:hover .uk-position-cover {
   opacity: 1;
   visibility: visible;
+}
+
+.post {
+  margin-bottom: 48px;
+}
+
+.post img, .post iframe {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post .about__post {
+  padding: 24px 20px;
+  background-color: #ebf5f6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.post .about__post h5 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.post .about__post p {
+  display: -webkit-box;
+  max-width: 100%;
+  height: 80px;
+  line-height: 1.7;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 16px 0;
+}
+
+.post .about__post:hover {
+  -webkit-box-shadow: 0 0 8px #104a5287;
+          box-shadow: 0 0 8px #104a5287;
 }
 /*# sourceMappingURL=style.css.map */

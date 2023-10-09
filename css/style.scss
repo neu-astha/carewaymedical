@@ -122,10 +122,22 @@ section{
     color: #dcdcdc;
 }
 
+.uk-lightbox {
+    background: #000000de;
+}
+
 h1.pagetitle {
     font-size: 64px;
     line-height: 1.4;
     margin-bottom: 32px;
+}
+
+.page__intro p{
+    margin-bottom: 16px;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
 }
   
 header{
@@ -568,6 +580,7 @@ form{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            background-color: #ffffffa3;
 
             h5{
                 height: 56px;
@@ -731,8 +744,51 @@ footer{
         }
     }
 
-    .swiper-slide:hover .uk-position-cover {
+    .post:hover .uk-position-cover {
         opacity: 1;
         visibility: visible;
     }
+}
+
+.post{
+        
+    margin-bottom: 48px;
+
+    img, iframe {
+        
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+    }
+    .about__post{
+            
+        padding: 24px 20px;
+        background-color: #ebf5f6;
+        transition: 0.4s;
+
+        h5{
+            
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        p {
+            display: -webkit-box;
+            max-width: 100%;
+            height: 80px;
+            line-height: 1.7;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 16px 0;
+        }
+
+        &:hover{
+            box-shadow: 0 0 8px #104a5287;
+            
+        }
+    }
+
 }
