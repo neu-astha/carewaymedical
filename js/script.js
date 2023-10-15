@@ -31,6 +31,18 @@ var swiper = new Swiper(".beforeafter", {
     delay: 1,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 var swiper = new Swiper(".beforeafterimages", {
@@ -43,6 +55,18 @@ var swiper = new Swiper(".beforeafterimages", {
     delay: 1,
     disableOnInteraction: true,
   },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 var mySwiper = new Swiper(".beforeaftervideos", {
@@ -56,6 +80,18 @@ var mySwiper = new Swiper(".beforeaftervideos", {
     disableOnInteraction: true,
     pauseOnMouseEnter: true,
   },
+  breakpoints: {
+    280: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
 });
 $('.beforeaftervideos').on('mouseenter', function(e){
   console.log('stop autoplay');

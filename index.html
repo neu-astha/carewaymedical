@@ -7,7 +7,8 @@
     <title>Careway Medical</title>
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap" 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/css/uikit.min.css">
@@ -19,32 +20,31 @@
 
 <body>
 
-    <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top" 
+    <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top"
         class="header uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
-        <nav class="uk-navbar-container uk-navbar-transparent">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m">
             <div class="uk-container">
                 <div uk-navbar>
-        
+
                     <div class="uk-navbar-left">
-        
+
                         <ul class="uk-navbar-nav">
                             <li>
                                 <a href="./index.html" class="uk-navbar-item uk-logo">
                                     <img class="full" src="./images/logo.png" alt="">
-                                    <img class="cropped" src="./images/logocropped.png" alt="">
                                 </a>
                             </li>
-                            
+
                         </ul>
-        
+
                     </div>
-        
+
                     <div class="uk-navbar-center">
-        
+
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">Home</a></li>
+                            <li class="uk-active"><a href="./index.html">Home</a></li>
                             <li>
-                                <a>Hair Clinic</a>
+                                <a href="./hair.html">Hair Clinic</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="./innerservicepage.html">Hair Transplant</a></li>
@@ -57,7 +57,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a>Dental Aesthetics</a>
+                                <a href="./dental.html">Dental Aesthetics</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="#">General Dentistry</a></li>
@@ -68,7 +68,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a>OPD</a>
+                                <a href="./opd.html">OPD</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="./innerservicepage.html">Skin</a></li>
@@ -83,28 +83,245 @@
                                         <li><a href="./images.html">Photo gallery</a></li>
                                         <li><a href="./videos.html">Video Gallery</a></li>
                                     </ul>
-                                </div></li>
-                            <li><a href="./faqs.html">FAQs</a></li> 
+                                </div>
+                            </li>
+                            <li><a href="./faqs.html">FAQs</a></li>
                         </ul>
-        
+
                     </div>
-        
+
                     <div class="uk-navbar-right">
                         <a href="https://www.facebook.com/Clinic.in.bharatpur" class="uk-navbar-item" target="_blank">
                             <span uk-icon="icon: facebook"></span>
                         </a>
-                        
-                        <a href="./contact.html" class=" button">
-                          Book Now
+
+                        <a href="./contact.html#booking" uk-scroll class=" button">
+                            Book Now
                         </a>
                     </div>
-        
                 </div>
             </div>
         </nav>
+        <div class="uk-hidden@m">
+            <nav class="uk-navbar-container ">
+                <div class="uk-container">
+                    <div uk-navbar>
+    
+                        <div class="uk-navbar-left">
+    
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="./index.html" class="uk-navbar-item uk-logo">
+                                        <img class="full" src="./images/logo.png" alt="">
+                                        <img class="cropped" src="./images/logocropped.png" alt="">
+                                    </a>
+                                </li>
+    
+                            </ul>
+    
+                        </div>
+            
+                        <div class="uk-navbar-right">
+                            <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"></div>
+                            <a class="uk-navbar-item uk-navbar-toggle uk-navbar-toggle-animate" href="#cm-mobile" uk-toggle="" aria-expanded="false">
+                                
+                
+                              </a>
+                        </div>
+            
+                    </div>
+                </div>
+            </nav>
+            <div id="cm-mobile " uk-offcanvas="" mode="push" overlay="" flip="" 
+                class="uk-offcanvas uk-offcanvas-overlay" tabindex="-1">
+                <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-push" role="dialog"
+                    aria-modal="true" style="max-width: 887px;">
+                    <div class="uk-panel">
+                        <ul class="uk-nav uk-nav-default tm-nav">
+                            <li class="uk-nav-header" data-svelte-h="svelte-51ym2f">General</li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/pro">Pro</a></li>
+                            <li><a href="/changelog">Changelog</a></li>
+                            <li><a href="/download">Download</a></li>
+                        </ul>
+                        <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
+                            <li class="uk-nav-header">Getting started</li>
+                            <li><a href="/docs/introduction">Introduction</a> </li>
+                            <li><a href="/docs/installation">Installation</a> </li>
+                            <li><a href="/docs/less">Less</a> </li>
+                            <li><a href="/docs/sass">Sass</a> </li>
+                            <li><a href="/docs/javascript">JavaScript</a> </li>
+                            <li><a href="/docs/webpack">Webpack</a> </li>
+                            <li><a href="/docs/custom-icons">Custom icons</a> </li>
+                            <li><a href="/docs/avoiding-conflicts">Avoiding conflicts</a> </li>
+                            <li><a href="/docs/accessibility">Accessibility</a> </li>
+                            <li><a href="/docs/rtl">RTL support</a> </li>
+                            <li><a href="/docs/migration">Migration</a> </li>
+                            <li class="uk-nav-header">Components</li>
+                            <li><a href="/docs/accordion">Accordion</a> </li>
+                            <li><a href="/docs/alert">Alert</a> </li>
+                            <li><a href="/docs/align">Align</a> </li>
+                            <li><a href="/docs/animation">Animation</a> </li>
+                            <li><a href="/docs/article">Article</a> </li>
+                            <li><a href="/docs/background">Background</a> </li>
+                            <li><a href="/docs/badge">Badge</a> </li>
+                            <li><a href="/docs/base">Base</a> </li>
+                            <li><a href="/docs/breadcrumb">Breadcrumb</a> </li>
+                            <li><a href="/docs/button">Button</a> </li>
+                            <li><a href="/docs/card">Card</a> </li>
+                            <li><a href="/docs/close">Close</a> </li>
+                            <li><a href="/docs/column">Column</a> </li>
+                            <li><a href="/docs/comment">Comment</a> </li>
+                            <li><a href="/docs/container">Container</a> </li>
+                            <li><a href="/docs/countdown">Countdown</a> </li>
+                            <li><a href="/docs/cover">Cover</a> </li>
+                            <li><a href="/docs/description-list">Description List</a> </li>
+                            <li><a href="/docs/divider">Divider</a> </li>
+                            <li><a href="/docs/dotnav">Dotnav</a> </li>
+                            <li><a href="/docs/drop">Drop</a> </li>
+                            <li><a href="/docs/dropbar">Dropbar</a> </li>
+                            <li><a href="/docs/dropdown">Dropdown</a> </li>
+                            <li><a href="/docs/dropnav">Dropnav</a> </li>
+                            <li><a href="/docs/filter">Filter</a> </li>
+                            <li><a href="/docs/flex">Flex</a> </li>
+                            <li><a href="/docs/form">Form</a> </li>
+                            <li><a href="/docs/grid">Grid</a> </li>
+                            <li><a href="/docs/heading">Heading</a> </li>
+                            <li><a href="/docs/height">Height</a> </li>
+                            <li><a href="/docs/icon">Icon</a> </li>
+                            <li><a href="/docs/iconnav">Iconnav</a> </li>
+                            <li><a href="/docs/image">Image</a> </li>
+                            <li><a href="/docs/inverse">Inverse</a> </li>
+                            <li><a href="/docs/label">Label</a> </li>
+                            <li><a href="/docs/leader">Leader</a> </li>
+                            <li><a href="/docs/lightbox">Lightbox</a> </li>
+                            <li><a href="/docs/link">Link</a> </li>
+                            <li><a href="/docs/list">List</a> </li>
+                            <li><a href="/docs/margin">Margin</a> </li>
+                            <li><a href="/docs/marker">Marker</a> </li>
+                            <li><a href="/docs/modal">Modal</a> </li>
+                            <li><a href="/docs/nav">Nav</a> </li>
+                            <li class="uk-active"><a href="/docs/navbar" aria-current="page">Navbar</a> </li>
+                            <li><a href="/docs/notification">Notification</a> </li>
+                            <li><a href="/docs/offcanvas">Off-canvas</a> </li>
+                            <li><a href="/docs/overlay">Overlay</a> </li>
+                            <li><a href="/docs/padding">Padding</a> </li>
+                            <li><a href="/docs/pagination">Pagination</a> </li>
+                            <li><a href="/docs/parallax">Parallax</a> </li>
+                            <li><a href="/docs/placeholder">Placeholder</a> </li>
+                            <li><a href="/docs/position">Position</a> </li>
+                            <li><a href="/docs/print">Print</a> </li>
+                            <li><a href="/docs/progress">Progress</a> </li>
+                            <li><a href="/docs/scroll">Scroll</a> </li>
+                            <li><a href="/docs/scrollspy">Scrollspy</a> </li>
+                            <li><a href="/docs/search">Search</a> </li>
+                            <li><a href="/docs/section">Section</a> </li>
+                            <li><a href="/docs/slidenav">Slidenav</a> </li>
+                            <li><a href="/docs/slider">Slider</a> </li>
+                            <li><a href="/docs/slideshow">Slideshow</a> </li>
+                            <li><a href="/docs/sortable">Sortable</a> </li>
+                            <li><a href="/docs/spinner">Spinner</a> </li>
+                            <li><a href="/docs/sticky">Sticky</a> </li>
+                            <li><a href="/docs/subnav">Subnav</a> </li>
+                            <li><a href="/docs/svg">SVG</a> </li>
+                            <li><a href="/docs/switcher">Switcher</a> </li>
+                            <li><a href="/docs/tab">Tab</a> </li>
+                            <li><a href="/docs/table">Table</a> </li>
+                            <li><a href="/docs/text">Text</a> </li>
+                            <li><a href="/docs/thumbnav">Thumbnav</a> </li>
+                            <li><a href="/docs/tile">Tile</a> </li>
+                            <li><a href="/docs/toggle">Toggle</a> </li>
+                            <li><a href="/docs/tooltip">Tooltip</a> </li>
+                            <li><a href="/docs/totop">Totop</a> </li>
+                            <li><a href="/docs/transition">Transition</a> </li>
+                            <li><a href="/docs/upload">Upload</a> </li>
+                            <li><a href="/docs/utility">Utility</a> </li>
+                            <li><a href="/docs/video">Video</a> </li>
+                            <li><a href="/docs/visibility">Visibility</a> </li>
+                            <li><a href="/docs/width">Width</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="cm-mobile purano" uk-offcanvas="" mode="push" overlay="" flip="" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                  <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
+                  <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
+                    <ul class="uk-subnav uk-subnav-pill">
+                      <li>
+                        <a href="./index.html" class="uk-navbar-item ">
+                            Home
+                          </a>
+                      </li>
+                      <li>
+                        <a class="uk-navbar-item" href="./hair.html" tabindex="0" aria-haspopup="true" aria-expanded="false">
+                            Hair Clinic
+                          </a>
+                          <div uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click" class="uk-dropdown">
+                            <ul class="uk-nav uk-dropdown-nav">
+                                <li><a href="./innerservicepage.html">Hair Transplant</a></li>
+                                <li><a href="./innerservicepage.html">PRP</a></li>
+                                <li><a href="./innerservicepage.html">GFC</a></li>
+                                <li><a href="./innerservicepage.html">LLLT</a></li>
+                                <li><a href="./innerservicepage.html">Mesotherapy</a></li>
+                                <li><a href="./innerservicepage.html">SMP</a></li>
+                            </ul>
+                          </div>
+                      </li>
+                      <li>
+                        <a href="./dental.html" tabindex="0" aria-haspopup="true" aria-expanded="false">Dental Aesthetics</a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="#">General Dentistry</a></li>
+                                <li><a href="#">Cosmetic Dentistry</a></li>
+                                <li><a href="#">Teeth Scaling & Whitening</a></li>
+                                <li><a href="#">Hollywood Smile</a></li>
+                            </ul>
+                        </div>
+                      </li>
+                        <li>
+                            <a href="./opd.html" tabindex="0" aria-haspopup="true" aria-expanded="false">OPD</a>
+                        <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="./innerservicepage.html">Skin</a></li>
+                                <li><a href="./innerservicepage.html">ENT</a></li>
+                                <li><a href="./innerservicepage.html">Psychiatry</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li><a tabindex="0" aria-haspopup="true" aria-expanded="false">Results</a>
+                            <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="./images.html">Photo gallery</a></li>
+                                    <li><a href="./videos.html">Video Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="./faqs.html">FAQs</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+        </div>
+        
     </header>
 
-    <div class="home__slider">
+    <div class="share uk-position-fixed">
+        <a href="tel:+977-9851050310" target="blank">
+            <img src="../images/phone.png" alt="">
+        </a>
+        <a href="viber://chat?number=%2B9779851050310" target="blank">
+            <img src="../images/viber.png" alt="">
+        </a>
+        <a href="https://wa.me/+9779851050310" target="blank"> 
+            <img src="../images/whatsapp.png" alt="">
+        </a>
+        <a href="" target="blank"> 
+            <img src="../images/messenger.png" alt="">
+        </a>
+    </div>
+
+    <!-- <div class="home__slider">
         <div class="swiper homeSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -130,21 +347,30 @@
         </div>
         <div class="home__slidertext">
             <h1>Rediscover Your Confidence </h1>
-            <!-- <h1>Unlock Your Confidence with Perfect Hair Restoration!</h1> -->
             <p>Welcome to our clinic, your pathway to natural-looking results from industry-leading 
                 surgeons and injectors. Skin | Hair | Dental | ENT clinic in Chitwan</p>
+        </div>
+    </div> -->
+
+    <div class="home__video">
+        <div class="video__wrap">
+            
+            <video class="uk-visible@s" src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" uk-video="autoplay: inview; automute: true" controls playsinline></video>
+            <video class="uk-hidden@s" src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" uk-video="autoplay: inview; automute: true" controls playsinline></video>
         </div>
     </div>
 
     <section class="intro">
         <div class="uk-container">
-            <div class="uk-grid uk-child-width-1-2 uk-flex-middle">
-                <div class="intro__desc ">
+            <div class="uk-grid uk-child-width-1-2@s uk-flex-middle">
+                <div class="intro__desc">
                     <div class="uk-margin-large-right">
                         <h2 class="uk-margin-medium-bottom">We offer diverse services for all age groups</h2>
                         <p>
-                            At Careway Medical, we are committed to your well-being. As a premier healthcare facility, we
-                            offer a wide range of specialized services, including Hair Transplant, Dental Care, Outpatient
+                            At Careway Medical, we are committed to your well-being. As a premier healthcare facility,
+                            we
+                            offer a wide range of specialized services, including Hair Transplant, Dental Care,
+                            Outpatient
                             Department (OPD) services, Skin Care, and Psychiatry. Our mission is to provide you with
                             holistic and personalized healthcare solutions that empower you to lead a healthier, happier
                             life.
@@ -156,10 +382,11 @@
                     </div>
                 </div>
                 <div class="intro__images">
-                    <div class="uk-position-relative"uk-scrollspy="cls: uk-animation-fade; target: img; delay: 500;">
+                    <div class="uk-position-relative" uk-scrollspy="cls: uk-animation-fade; target: img; delay: 500;">
                         <img class="security" src="./images/security.png" alt="">
                         <img class="top" src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
-                        <img class="bottom" src="./images/woman-dentist-stomatologist-mask-working-oral-health-assessment.jpg" alt="">
+                        <img class="bottom"
+                            src="./images/woman-dentist-stomatologist-mask-working-oral-health-assessment.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -174,24 +401,28 @@
                 <li><a href="">Dental</a></li>
                 <li><a href="">ENT</a></li>
             </ul>
-            
+
             <ul class="uk-switcher uk-margin">
                 <li>
-                    <div class="uk-column-1-2">
+                    <div class="uk-column-1-2@s">
                         <div class="" uk-scrollspy="cls: uk-animation-slide-right; outview">
-                            <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg" alt="">
+                            <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg"
+                                alt="">
                         </div>
                         <div class="" uk-scrollspy="cls: uk-animation-fade; delay: 400">
                             <h2>Hair Transplant</h2>
                             <div class="servicetab__desc">
                                 <p>
-                                    Are you tired of dealing with hair loss and thinning? Say goodbye to your hair woes and
-                                    embrace a new era of confidence with our cutting-edge hair transplant technology. With
+                                    Are you tired of dealing with hair loss and thinning? Say goodbye to your hair woes
+                                    and
+                                    embrace a new era of confidence with our cutting-edge hair transplant technology.
+                                    With
                                     our latest advancements, we guarantee exceptional results that will transform your
                                     appearance and boost your self-esteem.
                                 </p>
                                 <p>
-                                    Hair transplant surgery involves taking hair follicles from one area of the scalp and
+                                    Hair transplant surgery involves taking hair follicles from one area of the scalp
+                                    and
                                     transplanting them to another area. This can be an effective option for people with
                                     advanced hair loss.
                                 </p>
@@ -201,7 +432,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="uk-column-1-2">
+                    <div class="uk-column-1-2@s">
                         <div class="" uk-scrollspy="cls: uk-animation-slide-right; outview">
                             <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
                         </div>
@@ -209,14 +440,18 @@
                             <h2>Skin</h2>
                             <div class="servicetab__desc">
                                 <p>
-                                    You are at the right place if you want to anaesthetise your face or body, correct the
+                                    You are at the right place if you want to anaesthetise your face or body, correct
+                                    the
                                     body parts you are not satisfied with or perfect your looks.
-    
+
                                 </p>
                                 <p>
-                                    At Careway, we provide a safe and modern environment, staffed by expert surgeons, for
-                                    both surgical and non-surgical cosmetic procedures. Our goal is to enhance your natural
-                                    beauty and boost your self-confidence through advanced techniques, ensuring your results
+                                    At Careway, we provide a safe and modern environment, staffed by expert surgeons,
+                                    for
+                                    both surgical and non-surgical cosmetic procedures. Our goal is to enhance your
+                                    natural
+                                    beauty and boost your self-confidence through advanced techniques, ensuring your
+                                    results
                                     are both discreet and stunning.
                                 </p>
                             </div>
@@ -225,7 +460,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="uk-column-1-2">
+                    <div class="uk-column-1-2@s">
                         <div class="" uk-scrollspy="cls: uk-animation-slide-right; outview">
                             <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
                         </div>
@@ -236,12 +471,15 @@
                                     Say goodbye to dental worries and hello to a brighter, healthier smile with Careway
                                     Medical Clinic. Our dedicated dental team is here to provide you with top-notch care
                                     that you deserve.
-    
+
                                 </p>
                                 <p>
-                                    At Careway, we assure a secure setting for achieving successful outcomes in dental and
-                                    smile enhancement procedures. Our expert dentists employ cutting-edge dental equipment
-                                    and top-quality products to bring out your natural and healthy smile. Our primary goal
+                                    At Careway, we assure a secure setting for achieving successful outcomes in dental
+                                    and
+                                    smile enhancement procedures. Our expert dentists employ cutting-edge dental
+                                    equipment
+                                    and top-quality products to bring out your natural and healthy smile. Our primary
+                                    goal
                                     is to enhance your confidence and make your reflection in the mirror even more
                                     delightful through smile aesthetics.
                                 </p>
@@ -251,23 +489,28 @@
                     </div>
                 </li>
                 <li>
-                    <div class="uk-column-1-2">
+                    <div class="uk-column-1-2@s">
                         <div class="" uk-scrollspy="cls: uk-animation-slide-right; outview">
-                            <img src="./images/ears-endoscopy-child-otoscopy-procedure-with-otoscope-ent-doctor-otolaryngologist-treat-ears-girl.jpg" alt="">
+                            <img src="./images/ears-endoscopy-child-otoscopy-procedure-with-otoscope-ent-doctor-otolaryngologist-treat-ears-girl.jpg"
+                                alt="">
                         </div>
                         <div class="" uk-scrollspy="cls: uk-animation-fade; delay: 400">
                             <h2>ENT</h2>
                             <div class="servicetab__desc">
                                 <p>
-                                    Nepal faces a notable challenge in addressing a substantial population afflicted with
+                                    Nepal faces a notable challenge in addressing a substantial population afflicted
+                                    with
                                     Ear, Nose, Throat, and Thyroid disorders. The rising incidence of ENT issues compels
-                                    patients to either turn to multi-specialty hospitals or consider seeking medical care
+                                    patients to either turn to multi-specialty hospitals or consider seeking medical
+                                    care
                                     abroad. Notably, there is a glaring absence of a dedicated ENT, Head & Neck/Thyroid
                                     specialty center within both the government and private healthcare sectors in Nepal.
                                 </p>
                                 <p>
-                                    Most conditions of the ear, nose and throat are preventable. It is important to create
-                                    awareness among the community members regarding harmful practices which can lead to the
+                                    Most conditions of the ear, nose and throat are preventable. It is important to
+                                    create
+                                    awareness among the community members regarding harmful practices which can lead to
+                                    the
                                     diseases of ear, nose and throat.
                                 </p>
                             </div>
@@ -317,52 +560,31 @@
         </div>
     </section>
 
-    <div class="homeform">
+    <div class="homebook">
         <div class="uk-container">
-            <form action="">
-                <h2 class="uk-text-center uk-margin-large-bottom">Book an appointment</h2>
-                <div class="uk-grid uk-child-width-1-2 uk-flex-between">
-                    <div class="form__group">
-                        <input type="text" placeholder="Name">
-                    </div>
-                    <div class="form__group">
-                        <input type="number" placeholder="Number">
-                    </div>
-                    <div class="form__group">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="form__group">
-                        <select id="inputState" class="form-select">
-                            <option selected="">Patient type</option>
-                            <option>New Patient</option>
-                            <option>Existing Patient</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <select id="inputState" class="form-select">
-                            <option selected="">Service</option>
-                            <option>Hair</option>
-                            <option>Skin</option>
-                            <option>Dental</option>
-                            <option>ENT</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+            <div class="homebook__content  uk-background-fixed uk-background-cover uk-position-relative" style="background-image: url(../images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg);">
+                <div class="uk-overlay uk-position-absolute">
+                    
+                    <h2 class="uk-text-center uk-margin-large-bottom">Book online</h2>
+                    <div class="width600 uk-text-center uk-margin-auto">
+                        <div class="uk-margin-medium-bottom">
+                            <p>Would you like to discuss directly what your options are? To book an appointment straight away you can use our online booking form</p>
+                        </div>
+                        <a class="button" href="./contact.html#booking">Book Now</a>
                     </div>
                 </div>
-                <button class="button" onclick="window.location.href='./contact.html'">Book Now</button>
-            </form>
+            </div>
         </div>
     </div>
 
     <section class="testimonials__sec">
-        <div class="uk-grid-match uk-margin-xlarge-left" uk-grid>
+        <div class="uk-grid-match" uk-grid>
             <div class="uk-width-2-5@l uk-width-1-3@m uk-width-1-1@s">
                 <div class="rev__info uk-margin-large-right">
                     <h2 class="">What Our Patients Say</h2>
                     <p class="">
-                        We invite you to come discover why we are the leading destination for hair transplant and luxury cosmetic care
+                        We invite you to come discover why we are the leading destination for hair transplant and luxury
+                        cosmetic care
                         in Chitwan.
                     </p>
                 </div>
@@ -372,15 +594,14 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testimonials-text-wrapper dark-style">
-                                <p >
+                                <p>
                                     "One of the best place in bharatpur chitwan for treatment of all kind of teeth i
                                     changed my teeth when i have been in nepal for holiday they did very well all staffs
                                     they are very kind and very punctual in treatment thanks for all and specially
                                     thanks "
                                 </p>
                                 <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
-                                        src="./images/test1.jpg"
-                                        >
+                                        src="./images/test1.jpg">
                                     <div>
                                         <h4 class="">Bijay Khanal</h4>
                                         <p class="">CEO</p>
@@ -394,8 +615,7 @@
                                     very friendly. Atmosphere is very nice and clean. Now I am waiting for my result."
                                 </p>
                                 <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
-                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8b52144c95_Member-Photo-Close-up-5.webp"
-                                        >
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8b52144c95_Member-Photo-Close-up-5.webp">
                                     <div>
                                         <h4 class="">Eleanor Pena</h4>
                                         <p class="">Developer</p>
@@ -409,8 +629,7 @@
                                     is exactly what our business has been lacking. I'm good to go. Thank you for
                                     making it painless, pleasant and most of all hassle free!"</p>
                                 <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
-                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp"
-                                        >
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp">
                                     <div>
                                         <h4 class="">Ronald Richards</h4>
                                         <p class="">Manager</p>
@@ -422,8 +641,7 @@
                             <div class="testimonials-text-wrapper dark-style">
                                 <p class="">"This is me"</p>
                                 <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
-                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp"
-                                        >
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp">
                                     <div>
                                         <h4 class="">Astha</h4>
                                         <p class="">Manager</p>
@@ -450,16 +668,18 @@
                 <h2 class="uk-margin-large-bottom">Blogs</h2>
                 <div class="button">See All</div>
             </div>
-            <div class="uk-grid uk-child-width-1-3">
+            <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
                 <div class="blog__wrap">
                     <div class="blog uk-position-relative">
-                        <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg" alt="">
+                        <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg"
+                            alt="">
                         <div class="uk-overlay uk-overlay-default uk-position-absolute">
                             <h5>Hair transplantation without shaving</h5>
                             <p>
-                                The hair transplantation without shaving method preferred by men and women with long hair
+                                The hair transplantation without shaving method preferred by men and women with long
+                                hair
                                 is performed with Sapphire Fue technique, but what makes this technique different is
-                                that only a very small area is shaved on the neck, which is the donor area. 
+                                that only a very small area is shaved on the neck, which is the donor area.
                             </p>
                             <div>
                                 <a href="" class="button">Read more</a>
@@ -469,7 +689,8 @@
                 </div>
                 <div class="blog__wrap">
                     <div class="blog uk-position-relative">
-                        <img src="./images/head-balding-man-before-after-hair-transplant-surgery-man-losing-his-hair-has-become.jpg" alt="">
+                        <img src="./images/head-balding-man-before-after-hair-transplant-surgery-man-losing-his-hair-has-become.jpg"
+                            alt="">
                         <div class="uk-overlay uk-overlay-default uk-position-absolute">
                             <h5>DHI Hair Transplantation</h5>
                             <p>
@@ -491,9 +712,10 @@
                         <div class="uk-overlay uk-overlay-default uk-position-absolute">
                             <h5>Hair transplantation without shaving</h5>
                             <p>
-                                The hair transplantation without shaving method preferred by men and women with long hair
+                                The hair transplantation without shaving method preferred by men and women with long
+                                hair
                                 is performed with Sapphire Fue technique, but what makes this technique different is
-                                that only a very small area is shaved on the neck, which is the donor area. 
+                                that only a very small area is shaved on the neck, which is the donor area.
                             </p>
                             <div>
                                 <a href="" class="button">Read more</a>
@@ -512,9 +734,9 @@
                 <h2>Contact</h2>
                 <a href="./contact" class="button">Let's Connect</a>
             </div>
-            <div class="uk-grid uk-child-width-1-2">
+            <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1">
                 <div class="footer__wrap">
-                    <div class="uk-grid uk-child-width-1-2 uk-flex-between@s uk-flex-bottom">
+                    <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1 uk-flex-between@s uk-flex-bottom">
                         <div class="col">
                             <div class="logo">
                                 <a href="./index.html">
@@ -524,21 +746,26 @@
                         </div>
                         <div class="col">
                             <ul class="uk-flex">
-                                <li><a href="https://www.facebook.com/Clinic.in.bharatpur" target="_blank"><span uk-icon="icon: facebook"></span></a></li>
-                                <li><a href="tel:+977-056-490860"><span uk-icon="icon: receiver" target="_blank"></span></a></li>
+                                <li><a href="https://www.facebook.com/Clinic.in.bharatpur" target="_blank"><span
+                                            uk-icon="icon: facebook"></span></a></li>
+                                <li><a href="tel:+977-056-490860"><span uk-icon="icon: receiver"
+                                            target="_blank"></span></a></li>
                                 <li><a href=""><span uk-icon="icon: whatsapp" target="_blank"></span></a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul>
-                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Bharatpur</a></li>
-                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Chitwan, Nepal</a></li>
+                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Bharatpur</a>
+                                </li>
+                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Chitwan,
+                                        Nepal</a></li>
                             </ul>
                         </div>
                         <div class="col">
                             <ul>
                                 <li><a href="tel:+977-056-490860" target="_blank">056-490860</a></li>
-                                <li><a href="mailto:carewaynepal@gmail.com" target="_blank">carewaynepal@gmail.com</a></li>
+                                <li><a href="mailto:carewaynepal@gmail.com" target="_blank">carewaynepal@gmail.com</a>
+                                </li>
                             </ul>
                         </div>
                         <div class="col">
@@ -580,7 +807,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/js/uikit.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/js/uikit-icons.min.js"></script>
 
     <script src="./js/script.js"></script>
