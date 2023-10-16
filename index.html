@@ -102,195 +102,72 @@
                 </div>
             </div>
         </nav>
-        <div class="uk-hidden@m">
-            <nav class="uk-navbar-container ">
-                <div class="uk-container">
-                    <div uk-navbar>
-    
-                        <div class="uk-navbar-left">
-    
-                            <ul class="uk-navbar-nav">
-                                <li>
-                                    <a href="./index.html" class="uk-navbar-item uk-logo">
-                                        <img class="full" src="./images/logo.png" alt="">
-                                        <img class="cropped" src="./images/logocropped.png" alt="">
-                                    </a>
-                                </li>
-    
-                            </ul>
-    
-                        </div>
-            
-                        <div class="uk-navbar-right">
+        <div class="careway-header-mobile uk-hidden@m">
+            <div class="uk-container">
+                <div class="uk-navbar-container">
+                    <nav uk-navbar="" class="uk-navbar">
+                      <div class="uk-navbar-left uk-margin-right">
+                        <a href="./index.html" class="uk-navbar-item uk-logo">
+                          <img src="./images/logo.png">
+                        </a>
+                      </div>
+                      <div class="uk-navbar-right">
+                          <a href="https://www.facebook.com/Clinic.in.bharatpur" class="uk-navbar-item" target="_blank">
+                              <span uk-icon="icon: facebook"></span>
+                          </a>
+      
+                          <a href="./contact.html#booking" uk-scroll class=" button">
+                              Book Now
+                          </a>
+                          <a class="uk-navbar-item uk-navbar-toggle" href="#careway-mobile" uk-toggle="" aria-expanded="false">
                             <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"></div>
-                            <a class="uk-navbar-item uk-navbar-toggle uk-navbar-toggle-animate" href="#cm-mobile" uk-toggle="" aria-expanded="false">
-                                
-                
-                              </a>
-                        </div>
-            
-                    </div>
-                </div>
-            </nav>
-            <div id="cm-mobile " uk-offcanvas="" mode="push" overlay="" flip="" 
-                class="uk-offcanvas uk-offcanvas-overlay" tabindex="-1">
-                <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-push" role="dialog"
-                    aria-modal="true" style="max-width: 887px;">
-                    <div class="uk-panel">
-                        <ul class="uk-nav uk-nav-default tm-nav">
-                            <li class="uk-nav-header" data-svelte-h="svelte-51ym2f">General</li>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/pro">Pro</a></li>
-                            <li><a href="/changelog">Changelog</a></li>
-                            <li><a href="/download">Download</a></li>
-                        </ul>
-                        <ul class="uk-nav uk-nav-default tm-nav uk-margin-top">
-                            <li class="uk-nav-header">Getting started</li>
-                            <li><a href="/docs/introduction">Introduction</a> </li>
-                            <li><a href="/docs/installation">Installation</a> </li>
-                            <li><a href="/docs/less">Less</a> </li>
-                            <li><a href="/docs/sass">Sass</a> </li>
-                            <li><a href="/docs/javascript">JavaScript</a> </li>
-                            <li><a href="/docs/webpack">Webpack</a> </li>
-                            <li><a href="/docs/custom-icons">Custom icons</a> </li>
-                            <li><a href="/docs/avoiding-conflicts">Avoiding conflicts</a> </li>
-                            <li><a href="/docs/accessibility">Accessibility</a> </li>
-                            <li><a href="/docs/rtl">RTL support</a> </li>
-                            <li><a href="/docs/migration">Migration</a> </li>
-                            <li class="uk-nav-header">Components</li>
-                            <li><a href="/docs/accordion">Accordion</a> </li>
-                            <li><a href="/docs/alert">Alert</a> </li>
-                            <li><a href="/docs/align">Align</a> </li>
-                            <li><a href="/docs/animation">Animation</a> </li>
-                            <li><a href="/docs/article">Article</a> </li>
-                            <li><a href="/docs/background">Background</a> </li>
-                            <li><a href="/docs/badge">Badge</a> </li>
-                            <li><a href="/docs/base">Base</a> </li>
-                            <li><a href="/docs/breadcrumb">Breadcrumb</a> </li>
-                            <li><a href="/docs/button">Button</a> </li>
-                            <li><a href="/docs/card">Card</a> </li>
-                            <li><a href="/docs/close">Close</a> </li>
-                            <li><a href="/docs/column">Column</a> </li>
-                            <li><a href="/docs/comment">Comment</a> </li>
-                            <li><a href="/docs/container">Container</a> </li>
-                            <li><a href="/docs/countdown">Countdown</a> </li>
-                            <li><a href="/docs/cover">Cover</a> </li>
-                            <li><a href="/docs/description-list">Description List</a> </li>
-                            <li><a href="/docs/divider">Divider</a> </li>
-                            <li><a href="/docs/dotnav">Dotnav</a> </li>
-                            <li><a href="/docs/drop">Drop</a> </li>
-                            <li><a href="/docs/dropbar">Dropbar</a> </li>
-                            <li><a href="/docs/dropdown">Dropdown</a> </li>
-                            <li><a href="/docs/dropnav">Dropnav</a> </li>
-                            <li><a href="/docs/filter">Filter</a> </li>
-                            <li><a href="/docs/flex">Flex</a> </li>
-                            <li><a href="/docs/form">Form</a> </li>
-                            <li><a href="/docs/grid">Grid</a> </li>
-                            <li><a href="/docs/heading">Heading</a> </li>
-                            <li><a href="/docs/height">Height</a> </li>
-                            <li><a href="/docs/icon">Icon</a> </li>
-                            <li><a href="/docs/iconnav">Iconnav</a> </li>
-                            <li><a href="/docs/image">Image</a> </li>
-                            <li><a href="/docs/inverse">Inverse</a> </li>
-                            <li><a href="/docs/label">Label</a> </li>
-                            <li><a href="/docs/leader">Leader</a> </li>
-                            <li><a href="/docs/lightbox">Lightbox</a> </li>
-                            <li><a href="/docs/link">Link</a> </li>
-                            <li><a href="/docs/list">List</a> </li>
-                            <li><a href="/docs/margin">Margin</a> </li>
-                            <li><a href="/docs/marker">Marker</a> </li>
-                            <li><a href="/docs/modal">Modal</a> </li>
-                            <li><a href="/docs/nav">Nav</a> </li>
-                            <li class="uk-active"><a href="/docs/navbar" aria-current="page">Navbar</a> </li>
-                            <li><a href="/docs/notification">Notification</a> </li>
-                            <li><a href="/docs/offcanvas">Off-canvas</a> </li>
-                            <li><a href="/docs/overlay">Overlay</a> </li>
-                            <li><a href="/docs/padding">Padding</a> </li>
-                            <li><a href="/docs/pagination">Pagination</a> </li>
-                            <li><a href="/docs/parallax">Parallax</a> </li>
-                            <li><a href="/docs/placeholder">Placeholder</a> </li>
-                            <li><a href="/docs/position">Position</a> </li>
-                            <li><a href="/docs/print">Print</a> </li>
-                            <li><a href="/docs/progress">Progress</a> </li>
-                            <li><a href="/docs/scroll">Scroll</a> </li>
-                            <li><a href="/docs/scrollspy">Scrollspy</a> </li>
-                            <li><a href="/docs/search">Search</a> </li>
-                            <li><a href="/docs/section">Section</a> </li>
-                            <li><a href="/docs/slidenav">Slidenav</a> </li>
-                            <li><a href="/docs/slider">Slider</a> </li>
-                            <li><a href="/docs/slideshow">Slideshow</a> </li>
-                            <li><a href="/docs/sortable">Sortable</a> </li>
-                            <li><a href="/docs/spinner">Spinner</a> </li>
-                            <li><a href="/docs/sticky">Sticky</a> </li>
-                            <li><a href="/docs/subnav">Subnav</a> </li>
-                            <li><a href="/docs/svg">SVG</a> </li>
-                            <li><a href="/docs/switcher">Switcher</a> </li>
-                            <li><a href="/docs/tab">Tab</a> </li>
-                            <li><a href="/docs/table">Table</a> </li>
-                            <li><a href="/docs/text">Text</a> </li>
-                            <li><a href="/docs/thumbnav">Thumbnav</a> </li>
-                            <li><a href="/docs/tile">Tile</a> </li>
-                            <li><a href="/docs/toggle">Toggle</a> </li>
-                            <li><a href="/docs/tooltip">Tooltip</a> </li>
-                            <li><a href="/docs/totop">Totop</a> </li>
-                            <li><a href="/docs/transition">Transition</a> </li>
-                            <li><a href="/docs/upload">Upload</a> </li>
-                            <li><a href="/docs/utility">Utility</a> </li>
-                            <li><a href="/docs/video">Video</a> </li>
-                            <li><a href="/docs/visibility">Visibility</a> </li>
-                            <li><a href="/docs/width">Width</a> </li>
-                        </ul>
-                    </div>
-                </div>
+                          </a>
+                      </div>
+                    </nav>
+                  </div>
             </div>
-            <!-- <div id="cm-mobile purano" uk-offcanvas="" mode="push" overlay="" flip="" class="uk-offcanvas">
-                <div class="uk-offcanvas-bar">
-                  <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
-                  <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
-                    <ul class="uk-subnav uk-subnav-pill">
-                      <li>
-                        <a href="./index.html" class="uk-navbar-item ">
-                            Home
-                          </a>
-                      </li>
-                      <li>
-                        <a class="uk-navbar-item" href="./hair.html" tabindex="0" aria-haspopup="true" aria-expanded="false">
-                            Hair Clinic
-                          </a>
-                          <div uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click" class="uk-dropdown">
-                            <ul class="uk-nav uk-dropdown-nav">
-                                <li><a href="./innerservicepage.html">Hair Transplant</a></li>
-                                <li><a href="./innerservicepage.html">PRP</a></li>
-                                <li><a href="./innerservicepage.html">GFC</a></li>
-                                <li><a href="./innerservicepage.html">LLLT</a></li>
-                                <li><a href="./innerservicepage.html">Mesotherapy</a></li>
-                                <li><a href="./innerservicepage.html">SMP</a></li>
-                            </ul>
-                          </div>
-                      </li>
-                      <li>
-                        <a href="./dental.html" tabindex="0" aria-haspopup="true" aria-expanded="false">Dental Aesthetics</a>
-                        <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="#">General Dentistry</a></li>
-                                <li><a href="#">Cosmetic Dentistry</a></li>
-                                <li><a href="#">Teeth Scaling & Whitening</a></li>
-                                <li><a href="#">Hollywood Smile</a></li>
-                            </ul>
-                        </div>
-                      </li>
+            <div id="careway-mobile" uk-offcanvas="" mode="slide" overlay="" class="uk-offcanvas">
+              <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
+                <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
+                    <ul class="uk-nav">
+                        <li class="uk-active"><a href="./index.html">Home</a></li>
                         <li>
-                            <a href="./opd.html" tabindex="0" aria-haspopup="true" aria-expanded="false">OPD</a>
-                        <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
-                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                <li><a href="./innerservicepage.html">Skin</a></li>
-                                <li><a href="./innerservicepage.html">ENT</a></li>
-                                <li><a href="./innerservicepage.html">Psychiatry</a></li>
-                            </ul>
-                        </div>
+                            <a href="./hair.html">Hair Clinic</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="./innerservicepage.html">Hair Transplant</a></li>
+                                    <li><a href="./innerservicepage.html">PRP</a></li>
+                                    <li><a href="./innerservicepage.html">GFC</a></li>
+                                    <li><a href="./innerservicepage.html">LLLT</a></li>
+                                    <li><a href="./innerservicepage.html">Mesotherapy</a></li>
+                                    <li><a href="./innerservicepage.html">SMP</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li><a tabindex="0" aria-haspopup="true" aria-expanded="false">Results</a>
-                            <div class="uk-navbar-dropdown" uk-dropdown="animation: slide-top; animate-out: true; duration: 700; mode: click">
+                        <li>
+                            <a href="./dental.html">Dental Aesthetics</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#">General Dentistry</a></li>
+                                    <li><a href="#">Cosmetic Dentistry</a></li>
+                                    <li><a href="#">Teeth Scaling & Whitening</a></li>
+                                    <li><a href="#">Hollywood Smile</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./opd.html">OPD</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="./innerservicepage.html">Skin</a></li>
+                                    <li><a href="./innerservicepage.html">ENT</a></li>
+                                    <li><a href="./innerservicepage.html">Psychiatry</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a>Results</a>
+                            <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
                                     <li><a href="./images.html">Photo gallery</a></li>
                                     <li><a href="./videos.html">Video Gallery</a></li>
@@ -299,10 +176,10 @@
                         </li>
                         <li><a href="./faqs.html">FAQs</a></li>
                     </ul>
-                  </div>
                 </div>
-              </div> -->
-        </div>
+              </div>
+            </div>
+          </div>
         
     </header>
 
@@ -353,10 +230,18 @@
     </div> -->
 
     <div class="home__video">
-        <div class="video__wrap">
+        <div class="video__wrap uk-position-relative">
             
-            <video class="uk-visible@s" src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" uk-video="autoplay: inview; automute: true" controls playsinline></video>
+            <video class="uk-visible@s" src="./images/production_id_4487290 (2160p).mp4" width="1920" height="1080" uk-video="autoplay: inview; automute: true" controls playsinline></video>
             <video class="uk-hidden@s" src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1920" height="1080" uk-video="autoplay: inview; automute: true" controls playsinline></video>
+            <div class="results__cta uk-hidden@s uk-position-absolute">
+                <a href="./images.html" target="blank">
+                    <img src="../images/image-gallery (1).png" alt="">
+                </a>
+                <a href="./videos.html" target="blank">
+                    <img src="../images/play (4).png" alt="">
+                </a>
+            </div>
         </div>
     </div>
 
@@ -732,7 +617,7 @@
         <div class="uk-container">
             <div class="footer__top uk-text-center">
                 <h2>Contact</h2>
-                <a href="./contact" class="button">Let's Connect</a>
+                <a href="./contact.html" class="button">Let's Connect</a>
             </div>
             <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1">
                 <div class="footer__wrap">

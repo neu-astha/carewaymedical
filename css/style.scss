@@ -177,6 +177,51 @@ header{
     }
 }
 
+.careway-header-mobile{
+       
+    .uk-navbar-container{
+        background-color: transparent;
+
+        .uk-navbar-right {    
+            gap: 24px;
+        }
+
+        @media screen and (max-width: 410px) {
+            
+            .uk-navbar{
+                flex-wrap: wrap;
+            }
+
+            .uk-navbar-left {    
+                justify-content: center;
+                width: 100%;
+            }
+
+            .uk-navbar-right {   
+                justify-content: space-between;
+                width: 100%;
+
+                .uk-navbar-item{
+                    min-height: 64px;
+                }
+            }
+        }
+    }
+
+    .uk-offcanvas-bar{
+        
+        .uk-navbar-dropdown{
+            
+            background-color: transparent;
+            margin: 10px 0 24px;
+        }
+
+        .uk-navbar-dropdown-nav>li>a {
+            color: #bbb;
+        }
+    }
+}
+
 .share {
     right: 0;
     top: 50%;
@@ -213,6 +258,35 @@ header{
         left: 50%;
         right: auto;
         transform: translateX(-50%);
+    }
+}
+
+
+.results__cta {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        display: block;
+        margin: 10px 0;
+        opacity: 0.8;
+
+        img {
+            width: 32px;
+            filter: grayscale(0.95);
+        }
+
+        &:hover {
+            opacity: 1;
+            
+            img {
+                filter: grayscale(0);
+            }
+        }
     }
 }
 
@@ -520,7 +594,7 @@ header{
 
         .width600{
             width: 600px;
-            max-width: 100%;
+            max-width: 68vw;
         }
 
         &::before{
@@ -1236,6 +1310,15 @@ footer{
             }
         }
     }
+
+    @media screen and (max-width: 420px){
+        
+        .counter__section .counter__wrap {
+            justify-content: center;
+            gap: 16px;
+        }
+    }
+
 }
 
 .contactform{
@@ -1396,13 +1479,14 @@ footer{
 
         .uk-grid{
             
-            justify-content: center;
+            justify-content: space-around;
         }
 
         .contactinfo__wrap{
 
-            margin-right: 24px;
+            margin-right: 8px;
             margin-bottom: 16px;
+            padding-left: 0;
             
             i {
                 font-size: 24px;
