@@ -667,7 +667,7 @@ form{
 
         @media screen and (max-width: 480px)  {
             
-            width: calc(96% + 0);
+            width: 96%;
         }
     }
 
@@ -1254,7 +1254,28 @@ footer{
         justify-content: space-between;
 
         .about__desc{
-            margin: 120px 80px auto 160px;
+            margin: 140px 80px auto 160px;
+
+            h2{
+                font-size: 40px;
+            }
+
+            p{
+                font-size: 19px;
+            }
+
+            @media screen and (max-width: 1500px) {
+                
+                margin-top: 120px;
+
+                h2{
+                    font-size: 2rem;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+            }
         }
 
         .counter__wrap{
