@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careway Dental</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/dental.css">
+
+</head>
+
+https://klaas-dentist-template.webflow.io/ About
+https://klaas-dentist-template.webflow.io/ booking
+https://klaas-dentist-template.webflow.io/ success stories
+https://dentist.com.np/our-services/ footer
+
+https://plastic-surgery-128.webflow.io/ About Page
+
+<body>
+
+    <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top"
+        class="header uk-sticky uk-active uk-sticky-below uk-sticky-fixed">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m">
+            <div class="uk-container">
+                <div uk-navbar>
+
+                    <div class="uk-navbar-left">
+
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="./index.html" class="uk-navbar-item uk-logo">
+                                    <img class="" src="./images/logocropped.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <a href="https://www.facebook.com/Clinic.in.bharatpur" class="uk-navbar-item" target="_blank">
+                            <span uk-icon="icon: facebook"></span>
+                        </a>
+
+                        <a href="#booking" uk-scroll class=" button">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="careway-header-mobile uk-hidden@m">
+            <div class="uk-container">
+                <div class="uk-navbar-container">
+                    <nav uk-navbar="" class="uk-navbar">
+                        <div class="uk-navbar-left uk-margin-right">
+                            <a href="./index.html" class="uk-navbar-item uk-logo">
+                                <img src="./images/logo.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a href="https://www.facebook.com/Clinic.in.bharatpur" class="uk-navbar-item"
+                                target="_blank">
+                                <span uk-icon="icon: facebook"></span>
+                            </a>
+
+                            <a href="./contact.html#booking" uk-scroll class=" button">
+                                Book Now
+                            </a>
+                            <a class="uk-navbar-item uk-navbar-toggle" href="#careway-mobile" uk-toggle=""
+                                aria-expanded="false">
+                                <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"></div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="careway-mobile" uk-offcanvas="" mode="slide" overlay="" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
+                    <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
+                        <ul class="uk-nav">
+                            <li class="uk-active"><a href="./index.html">Home</a></li>
+                            <li>
+                                <a href="./hair.html">Hair Clinic</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="./innerservicepage.html">Hair Transplant</a></li>
+                                        <li><a href="./innerservicepage.html">PRP</a></li>
+                                        <li><a href="./innerservicepage.html">GFC</a></li>
+                                        <li><a href="./innerservicepage.html">LLLT</a></li>
+                                        <li><a href="./innerservicepage.html">Mesotherapy</a></li>
+                                        <li><a href="./innerservicepage.html">SMP</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./dental.html">Dental Aesthetics</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="#">General Dentistry</a></li>
+                                        <li><a href="#">Cosmetic Dentistry</a></li>
+                                        <li><a href="#">Teeth Scaling & Whitening</a></li>
+                                        <li><a href="#">Hollywood Smile</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./opd.html">OPD</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="./innerservicepage.html">Skin</a></li>
+                                        <li><a href="./innerservicepage.html">ENT</a></li>
+                                        <li><a href="./innerservicepage.html">Psychiatry</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a>Results</a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="./images.html">Photo gallery</a></li>
+                                        <li><a href="./videos.html">Video Gallery</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="./faqs.html">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="home__slider">
+        <div class="swiper homeSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/woman-dentist-stomatologist-mask-working-oral-health-assessment.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next homeslidernav">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="home__slidertext">
+            <h1>Rediscover Your Confidence </h1>
+            <p>Welcome to our clinic, your pathway to natural-looking results from industry-leading
+                surgeons and injectors. Your Dental clinic in Chitwan
+            </p>
+        </div>
+
+    </div>
+
+
+    <section class="callback uk-flex">
+        <label>Request a callback</label>
+        <div class="search__input">
+            <form action="" method="GET">
+                <input type="text" placeholder="Your Name">
+                <input type="number" placeholder="Your Contact Number">
+                <button type="submit"><span uk-icon="arrow-right" class="uk-icon"></span></button>
+            </form>
+        </div>
+    </section>
+
+    <section class="treatments">
+        <div class="uk-container">
+            <div class="head uk-margin-large-bottom">
+                <h6 class="subtitle">Services we provide</h6>
+                <div class="title">Our Clinic Services</div>
+            </div>
+            <ul uk-switcher="" class="servicetab__wrap flex__wrap" role="tablist">
+                <li class="uk-active" role="presentation">
+                    <a href="" aria-selected="true" role="tab" id="uk-switcher-19-tab-0"
+                        aria-controls="uk-switcher-19-tabpanel-0">General Dentistry</a>
+                </li>
+                <li role="presentation">
+                    <a href="" aria-selected="false" tabindex="-1" role="tab" id="uk-switcher-19-tab-1"
+                        aria-controls="uk-switcher-19-tabpanel-1">Cosmetic Dentistry</a>
+                </li>
+                <li role="presentation">
+                    <a href="" aria-selected="false" tabindex="-1" role="tab" id="uk-switcher-19-tab-2"
+                        aria-controls="uk-switcher-19-tabpanel-2">Advanced Dentistry</a>
+                </li>
+            </ul>
+            <ul class="uk-switcher tab__content" role="presentation">
+                <li class="uk-active" id="uk-switcher-19-tabpanel-0" role="tabpanel" aria-labelledby="uk-switcher-19-tab-0">
+                    <div class="content">
+                        <div class="m_card">
+                            <img src="../images/dental-hygiene.png" alt="">
+                            <h4>Dental Hygiene</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/dental-filling.png" alt="">
+                            <h4>Dental Filling</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/denture.png" alt="">
+                            <h4>Denture</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/dental-crown.png" alt="">
+                            <h4>Dental Crown</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/root-canal.png" alt="">
+                            <h4>Root Canal Treatment</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/dental-bridges.png" alt="">
+                            <h4>Dental Bridges</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/baby-teeth.png" alt="">
+                            <h4>Children's dentistry</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/tooth-extraction.png" alt="">
+                            <h4>Dental Extraction</h4>
+                        </div>
+                    </div>
+                </li>
+                <li id="uk-switcher-19-tabpanel-1" role="tabpanel" aria-labelledby="uk-switcher-19-tab-1">
+                    <div class="content">                    
+                        <div class="m_card">
+                            <img src="../images/veneer.png" alt="">
+                            <h4>Veneer</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/straightens-teeth.png" alt="">
+                            <h4>Invisalign</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/smile.png" alt="">
+                            <h4>Smile Makeover</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/tooth-whitening.png" alt="">
+                            <h4>Teeth Whitening</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/gold-teeth.png" alt="">
+                            <h4>Dental Jewellery</h4>
+                        </div>
+                    </div>
+                </li>
+                <li id="uk-switcher-19-tabpanel-2" role="tabpanel" aria-labelledby="uk-switcher-19-tab-2">
+                    <div class="content">                    
+                        <div class="m_card">
+                            <img src="../images/gingivitis.png" alt="">
+                            <h4>Gum Surgery</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/braces.png" alt="">
+                            <h4>Orthodontics</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/implant.png" alt="">
+                            <h4>Dental Implants</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/mouth.png" alt="">
+                            <h4>Oral Surgery</h4>
+                        </div>
+                        <div class="m_card">
+                            <img src="../images/crown.png" alt="">
+                            <h4>Crown and Bridges</h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="layout-grid content-grid">
+            <div id="grid__text1" class="grid__text">
+                <div class="head  uk-text-left uk-margin-large-bottom">
+                    <h6 class="subtitle">A little sth about Careway Dental</h6>
+                    <div class="title">About Us</div>
+                </div>
+                <h4 class="heading gridstart__text">
+                    <span class="opacity-70">We have Over </span>4&nbsp;years
+                    <span class="opacity-70"> of experience</span></h4>
+            </div>
+            <div id="grid__image1" class="grid__image uk-overflow-hidden">
+                <img src="./images/About.jpg" class="uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+            </div>
+            <!-- <div id="grid__image2" class="grid__image">
+                <div class="_3d-block">
+                    <div class="image-animation-trigger _3d-for-image"
+                        style="will-change: transform; transform: translate3d(-3.37416%, 3.9992%, 0px) scale3d(1, 1, 1) rotateX(-3.9992deg) rotateY(-5.06124deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        <div class="animation-color-bg"
+                            style="display: block; transform: translate3d(0px, 101%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        </div>
+                        <img
+                            src="https://assets.website-files.com/633daa121f1308def083b05d/63440da28116cd692c53a4de_pexels-polina-zimmerman-4687366.webp"
+                            srcset="https://assets.website-files.com/633daa121f1308def083b05d/63440da28116cd692c53a4de_pexels-polina-zimmerman-4687366-p-500.webp 500w, https://assets.website-files.com/633daa121f1308def083b05d/63440da28116cd692c53a4de_pexels-polina-zimmerman-4687366-p-800.webp 800w, https://assets.website-files.com/633daa121f1308def083b05d/63440da28116cd692c53a4de_pexels-polina-zimmerman-4687366.webp 1280w"
+                            alt="Klaas - Dentist website Webflow template" sizes="100vw" class="cover-image"
+                            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    </div>
+                </div>
+            </div>
+            <div id="w-node-_3e4083e3-292d-a20f-a0ab-b9c6709d6bf2-e783b087" class="grid-7-block-2">
+                <div class="numbering-block">
+                    <div class="numbering-line"
+                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                    </div>
+                    <p class="sign-text"
+                        style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                        Clinics</p>
+                </div>
+                <p class="grid-7-text-1">We specialize in helping patients with dental health and making their smiles
+                    look great.</p>
+                <p class="grid-7-text-2">Dental treatments are a vital part of your health. Choosing the best dental
+                    care for your unique needs is difficult. Our excellent team will help you in every way.</p><a
+                    data-w-id="a382427e-9b0d-1c69-172a-d09ce1100bed" href="#" class="button w-inline-block">
+                    <div class="text-for-button">The team</div><img
+                        src="https://assets.website-files.com/633daa121f1308def083b05d/634b07f56668dd28b880b46b_arrow-icon-tan.svg"
+                        loading="lazy" alt="" class="icon-for-button">
+                    <div class="button-bg"></div>
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="testimonials__sec">
+        <div class="uk-grid-match" uk-grid>
+            <div class="uk-width-2-5@l uk-width-1-3@m uk-width-1-1@s">
+                <div class="rev__info uk-margin-large-right">
+                    <h2 class="">What Our Patients Say</h2>
+                    <p class="">
+                        We invite you to come discover why we are the leading destination for hair transplant and luxury
+                        cosmetic care
+                        in Chitwan.
+                    </p>
+                </div>
+            </div>
+            <div class="uk-width-3-5@l uk-width-2-3@m uk-width-1-1@s">
+                <div class="swiper testimonials">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonials-text-wrapper dark-style">
+                                <p>
+                                    "One of the best place in bharatpur chitwan for treatment of all kind of teeth i
+                                    changed my teeth when i have been in nepal for holiday they did very well all staffs
+                                    they are very kind and very punctual in treatment thanks for all and specially
+                                    thanks "
+                                </p>
+                                <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
+                                        src="./images/test1.jpg">
+                                    <div>
+                                        <h4 class="">Bijay Khanal</h4>
+                                        <p class="">CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-text-wrapper dark-style">
+                                <p class="">"I did my PRP therapy for hair loss from CareWay Chitwan and the team was
+                                    very friendly. Atmosphere is very nice and clean. Now I am waiting for my result."
+                                </p>
+                                <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8b52144c95_Member-Photo-Close-up-5.webp">
+                                    <div>
+                                        <h4 class="">Eleanor Pena</h4>
+                                        <p class="">Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-text-wrapper dark-style">
+                                <p class="">"It really saves me time and effort. doctor sahab
+                                    is exactly what our business has been lacking. I'm good to go. Thank you for
+                                    making it painless, pleasant and most of all hassle free!"</p>
+                                <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp">
+                                    <div>
+                                        <h4 class="">Ronald Richards</h4>
+                                        <p class="">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials-text-wrapper dark-style">
+                                <p class="">"This is me"</p>
+                                <div class="testimonials-slider-author"><img alt="Photo" loading="lazy"
+                                        src="https://assets.website-files.com/6400cab93af08bf954144b71/6400cab93af08b8349144c97_Member-Photo-Close-up-6.webp">
+                                    <div>
+                                        <h4 class="">Astha</h4>
+                                        <p class="">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev testimonialnav">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="swiper-button-next testimonialnav">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs -->
+    <section>
+        <div class="uk-container">
+            <div class="uk-flex uk-flex-between uk-flex-top">
+                <h2 class="uk-margin-large-bottom">Blogs</h2>
+                <div class="button">See All</div>
+            </div>
+            <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
+                <div class="blog__wrap">
+                    <div class="blog uk-position-relative">
+                        <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg"
+                            alt="">
+                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                            <h5>Hair transplantation without shaving</h5>
+                            <p>
+                                The hair transplantation without shaving method preferred by men and women with long
+                                hair
+                                is performed with Sapphire Fue technique, but what makes this technique different is
+                                that only a very small area is shaved on the neck, which is the donor area.
+                            </p>
+                            <div>
+                                <a href="" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrap">
+                    <div class="blog uk-position-relative">
+                        <img src="./images/head-balding-man-before-after-hair-transplant-surgery-man-losing-his-hair-has-become.jpg"
+                            alt="">
+                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                            <h5>DHI Hair Transplantation</h5>
+                            <p>
+                                It is the process of direct hair transplantation, the grafts taken from the donor area
+                                are planted directly without the need to open the channel to the area where the hair
+                                transplant will be performed. In this method, using a medical pen named Choi-Pen, the
+                                hair follicles are first removed, and then planted in the problematic area with the same
+                                pen.
+                            </p>
+                            <div>
+                                <a href="" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__wrap">
+                    <div class="blog uk-position-relative">
+                        <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
+                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                            <h5>Hair transplantation without shaving</h5>
+                            <p>
+                                The hair transplantation without shaving method preferred by men and women with long
+                                hair
+                                is performed with Sapphire Fue technique, but what makes this technique different is
+                                that only a very small area is shaved on the neck, which is the donor area.
+                            </p>
+                            <div>
+                                <a href="" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="uk-container">
+            <div class="footer__top uk-text-center">
+                <h2>Contact</h2>
+                <a href="./contact.html" class="button">Let's Connect</a>
+            </div>
+            <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1">
+                <div class="footer__wrap">
+                    <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1 uk-flex-between@s uk-flex-bottom">
+                        <div class="col">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="./images/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <ul class="uk-flex">
+                                <li><a href="https://www.facebook.com/Clinic.in.bharatpur" target="_blank"><span
+                                            uk-icon="icon: facebook"></span></a></li>
+                                <li><a href="tel:+977-056-490860"><span uk-icon="icon: receiver"
+                                            target="_blank"></span></a></li>
+                                <li><a href=""><span uk-icon="icon: whatsapp" target="_blank"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Bharatpur</a>
+                                </li>
+                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Chitwan,
+                                        Nepal</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a href="tel:+977-056-490860" target="_blank">056-490860</a></li>
+                                <li><a href="mailto:carewaynepal@gmail.com" target="_blank">carewaynepal@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a href="./blogs.html">Blogs</a></li>
+                                <li><a href="./faqs.html">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <h6>Stay in Touch</h6>
+                    <p>Fill the form and we’ll reach out to you asap.</p>
+                    <form action="">
+                        <div class="form__group">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="form__group">
+                            <input type="number" placeholder="Contact Number">
+                        </div>
+                        <button class="button">Get a call</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom uk-text-center uk-margin-medium-top">
+                <span>Ⓒ 2023 Careway Medical</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/js/uikit.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.17.0/js/uikit-icons.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
