@@ -18,14 +18,6 @@
 
 </head>
 
-<!-- 
-https://klaas-dentist-template.webflow.io/ About
-https://klaas-dentist-template.webflow.io/ booking
-https://klaas-dentist-template.webflow.io/ success stories
-https://dentist.com.np/our-services/ footer
-
-https://plastic-surgery-128.webflow.io/ About Page -->
-
 
 <body>
 
@@ -39,7 +31,7 @@ https://plastic-surgery-128.webflow.io/ About Page -->
 
                         <ul class="uk-navbar-nav">
                             <li>
-                                <a href="./index.html" class="uk-navbar-item uk-logo">
+                                <a href="./dental.html" class="uk-navbar-item uk-logo">
                                     <img class="" src="./images/logocropped.png" alt="">
                                 </a>
                             </li>
@@ -50,13 +42,16 @@ https://plastic-surgery-128.webflow.io/ About Page -->
                                 <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#stories">Success Stories</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#blogs">Blogs</a>
                             </li>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#book">Booking</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
 
@@ -79,8 +74,8 @@ https://plastic-surgery-128.webflow.io/ About Page -->
                 <div class="uk-navbar-container">
                     <nav uk-navbar="" class="uk-navbar">
                         <div class="uk-navbar-left uk-margin-right">
-                            <a href="./index.html" class="uk-navbar-item uk-logo">
-                                <img src="./images/logo.png">
+                            <a href="./dental.html" class="uk-navbar-item uk-logo">
+                                <img src="./images/logocropped.png">
                             </a>
                         </div>
                         <div class="uk-navbar-right">
@@ -105,50 +100,27 @@ https://plastic-surgery-128.webflow.io/ About Page -->
                     <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
                     <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
                         <ul class="uk-nav">
-                            <li class="uk-active"><a href="./index.html">Home</a></li>
                             <li>
-                                <a href="./hair.html">Hair Clinic</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="./innerservicepage.html">Hair Transplant</a></li>
-                                        <li><a href="./innerservicepage.html">PRP</a></li>
-                                        <li><a href="./innerservicepage.html">GFC</a></li>
-                                        <li><a href="./innerservicepage.html">LLLT</a></li>
-                                        <li><a href="./innerservicepage.html">Mesotherapy</a></li>
-                                        <li><a href="./innerservicepage.html">SMP</a></li>
-                                    </ul>
-                                </div>
+                                <a href="./dental.html">Home</a>
                             </li>
                             <li>
-                                <a href="./dental.html">Dental Aesthetics</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="#">General Dentistry</a></li>
-                                        <li><a href="#">Cosmetic Dentistry</a></li>
-                                        <li><a href="#">Teeth Scaling & Whitening</a></li>
-                                        <li><a href="#">Hollywood Smile</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="./opd.html">OPD</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="./innerservicepage.html">Skin</a></li>
-                                        <li><a href="./innerservicepage.html">ENT</a></li>
-                                        <li><a href="./innerservicepage.html">Psychiatry</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#about">About</a>
                             </li>
-                            <li><a>Results</a>
-                                <div class="uk-navbar-dropdown">
-                                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li><a href="./images.html">Photo gallery</a></li>
-                                        <li><a href="./videos.html">Video Gallery</a></li>
-                                    </ul>
-                                </div>
+                            <li>
+                                <a href="#stories">Success Stories</a>
                             </li>
-                            <li><a href="./faqs.html">FAQs</a></li>
+                            <li>
+                                <a href="#blogs">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#book">Booking</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -182,14 +154,18 @@ https://plastic-surgery-128.webflow.io/ About Page -->
     </div>
 
 
-    <section class="callback uk-flex">
-        <label>Request a callback</label>
-        <div class="search__input">
-            <form action="" method="GET">
-                <input type="text" placeholder="Your Name">
-                <input type="number" placeholder="Your Contact Number">
-                <button type="submit"><span uk-icon="arrow-right" class="uk-icon"></span></button>
-            </form>
+    <section class="callback">
+        <div class="uk-container">
+            <div class="callback__wrap">
+                <label>Request a callback</label>
+                <div class="search__input">
+                    <form action="" method="GET">
+                        <input type="text" placeholder="Name">
+                        <input type="number" placeholder="Contact Number">
+                        <button type="submit"><span uk-icon="arrow-right" class="uk-icon"></span></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -316,11 +292,11 @@ https://plastic-surgery-128.webflow.io/ About Page -->
                         orthodontics
                     </div>
                 </div>
-                <div id="grid__image1" class="grid__image uk-overflow-hidden">
+                <div id="grid__image1" class="grid__image uk-overflow-hidden" uk-scrollspy="cls: uk-animation-slide-right;  delay: 500">
                     <img src="./images/About.jpg" class="uk-animation-reverse uk-transform-origin-top-right" 
                         uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                 </div>
-                <div id="grid__image2" class="grid__image uk-overflow-hidden">
+                <div id="grid__image2" class="grid__image uk-overflow-hidden" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                     <img src="./images/pexels-anna-shvets-3845811.jpg" class="uk-animation-reverse uk-transform-origin-top-right" 
                         uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
                 </div>
@@ -339,116 +315,220 @@ https://plastic-surgery-128.webflow.io/ About Page -->
         </div>
     </section>
 
-    <section class="success">
+    <section id="stories">
         <div class="uk-container uk-container-expand">
             <div class="head uk-margin-large-bottom">
                 <h6 class="subtitle">Stories</h6>
                 <div class="title">Our Success Stories</div>
             </div>
-            <div class="gallery__grid">
-                <div uk-lightbox="animation: fade">
+            <div class="gallery__grid" uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div uk-lightbox="animation: fade">
+                <div class="uk-position-relative galleryimage__wrap uk-overflow-hidden">
                     <a href="./images/dentist-examines-patients-teeth-dentist.jpg">
                         <img src="./images/dentist-examines-patients-teeth-dentist.jpg" alt="">
+                        <div class="uk-overlay-default uk-position-cover">
+                            <div class="uk-position-center">
+                                <span uk-icon="expand" class="uk-icon uk-overlay-icon"></span>
+                            </div>
+                        </div>
                     </a>
                 </div>
-                
             </div>
         </div>
     </section>
 
     <!-- Blogs -->
-    <section>
+    <section id="blogs">
         <div class="uk-container">
-            <div class="uk-flex uk-flex-between uk-flex-top">
-                <h2 class="uk-margin-large-bottom">Blogs</h2>
-                <div class="button">See All</div>
-            </div>
-            <div class="uk-grid uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1">
-                <div class="blog__wrap">
-                    <div class="blog uk-position-relative">
-                        <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg"
-                            alt="">
-                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
-                            <h5>Hair transplantation without shaving</h5>
-                            <p>
-                                The hair transplantation without shaving method preferred by men and women with long
-                                hair
-                                is performed with Sapphire Fue technique, but what makes this technique different is
-                                that only a very small area is shaved on the neck, which is the donor area.
-                            </p>
-                            <div>
-                                <a href="" class="button">Read more</a>
-                            </div>
+            <div class="uk-position-relative">
+                <div class="uk-flex uk-flex-between uk-flex-top ">
+                    <div class="head uk-margin-large-bottom">
+                        <h6 class="subtitle uk-text-left">Blogs</h6>
+                        <div class="title">Read our blogs</div>
+                    </div>
+                    <div class="swiper__navigation ">
+                        <div class="swiper-button-prev dentalblog">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="swiper-button-next dentalblog">
+                            <i class="fa-solid fa-arrow-right-long"></i>
                         </div>
                     </div>
                 </div>
-                <div class="blog__wrap">
-                    <div class="blog uk-position-relative">
-                        <img src="./images/head-balding-man-before-after-hair-transplant-surgery-man-losing-his-hair-has-become.jpg"
-                            alt="">
-                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
-                            <h5>DHI Hair Transplantation</h5>
-                            <p>
-                                It is the process of direct hair transplantation, the grafts taken from the donor area
-                                are planted directly without the need to open the channel to the area where the hair
-                                transplant will be performed. In this method, using a medical pen named Choi-Pen, the
-                                hair follicles are first removed, and then planted in the problematic area with the same
-                                pen.
-                            </p>
-                            <div>
-                                <a href="" class="button">Read more</a>
+                <div class="swiper blogs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/medical-professional-with-gloves-draws-dotted-line-head-balding-man.jpg"
+                                    alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>Hair transplantation without shaving</h5>
+                                    <p>
+                                        The hair transplantation without shaving method preferred by men and women with long
+                                        hair
+                                        is performed with Sapphire Fue technique, but what makes this technique different is
+                                        that only a very small area is shaved on the neck, which is the donor area.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>     
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="blog__wrap">
-                    <div class="blog uk-position-relative">
-                        <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
-                        <div class="uk-overlay uk-overlay-default uk-position-absolute">
-                            <h5>Hair transplantation without shaving</h5>
-                            <p>
-                                The hair transplantation without shaving method preferred by men and women with long
-                                hair
-                                is performed with Sapphire Fue technique, but what makes this technique different is
-                                that only a very small area is shaved on the neck, which is the donor area.
-                            </p>
-                            <div>
-                                <a href="" class="button">Read more</a>
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/head-balding-man-before-after-hair-transplant-surgery-man-losing-his-hair-has-become.jpg"
+                                    alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>DHI Hair Transplantation</h5>
+                                    <p>
+                                        It is the process of direct hair transplantation, the grafts taken from the donor area
+                                        are planted directly without the need to open the channel to the area where the hair
+                                        transplant will be performed. In this method, using a medical pen named Choi-Pen, the
+                                        hair follicles are first removed, and then planted in the problematic area with the same
+                                        pen.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>Hair transplantation without shaving</h5>
+                                    <p>
+                                        The hair transplantation without shaving method preferred by men and women with long
+                                        hair
+                                        is performed with Sapphire Fue technique, but what makes this technique different is
+                                        that only a very small area is shaved on the neck, which is the donor area.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>Hair transplantation without shaving</h5>
+                                    <p>
+                                        The hair transplantation without shaving method preferred by men and women with long
+                                        hair
+                                        is performed with Sapphire Fue technique, but what makes this technique different is
+                                        that only a very small area is shaved on the neck, which is the donor area.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>Hair transplantation without shaving</h5>
+                                    <p>
+                                        The hair transplantation without shaving method preferred by men and women with long
+                                        hair
+                                        is performed with Sapphire Fue technique, but what makes this technique different is
+                                        that only a very small area is shaved on the neck, which is the donor area.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog__wrap">
+                            <div class="blog uk-position-relative">
+                                <img src="./images/beautician-doing-injection-filler-female-client.jpg" alt="">
+                                <div class="uk-overlay uk-overlay-default uk-position-absolute">
+                                    <h5>Hair transplantation without shaving</h5>
+                                    <p>
+                                        The hair transplantation without shaving method preferred by men and women with long
+                                        hair
+                                        is performed with Sapphire Fue technique, but what makes this technique different is
+                                        that only a very small area is shaved on the neck, which is the donor area.
+                                    </p>
+                                    <div>
+                                        <a href="" class="button">Read more</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -460,74 +540,80 @@ https://plastic-surgery-128.webflow.io/ About Page -->
 
     <footer>
         <div class="uk-container">
-            <div class="footer__top uk-text-center">
-                <h2>Contact</h2>
-                <a href="./contact.html" class="button">Let's Connect</a>
-            </div>
-            <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1">
-                <div class="footer__wrap">
-                    <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-1 uk-flex-between@s uk-flex-bottom">
-                        <div class="col">
-                            <div class="logo">
-                                <a href="./index.html">
-                                    <img src="./images/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <ul class="uk-flex">
-                                <li><a href="https://www.facebook.com/Clinic.in.bharatpur" target="_blank"><span
-                                            uk-icon="icon: facebook"></span></a></li>
-                                <li><a href="tel:+977-056-490860"><span uk-icon="icon: receiver"
-                                            target="_blank"></span></a></li>
-                                <li><a href=""><span uk-icon="icon: whatsapp" target="_blank"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Bharatpur</a>
-                                </li>
-                                <li><a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Chitwan,
-                                        Nepal</a></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="tel:+977-056-490860" target="_blank">056-490860</a></li>
-                                <li><a href="mailto:carewaynepal@gmail.com" target="_blank">carewaynepal@gmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="./blogs.html">Blogs</a></li>
-                                <li><a href="./faqs.html">FAQs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </div>
+            <form action="" id="book">
+                <div class="head uk-margin-large-bottom">
+                    <h6 class="subtitle">Book Now</h6>
+                    <div class="title">Make an appointment</div>
+                </div>
+                <div class="uk-grid uk-child-width-1-2 uk-flex-between">
+                    <div class="form__group">
+                        <input type="date" placeholder="Pick a date *" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="time" placeholder="Time *" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" placeholder="Name *" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="number" placeholder="Number *" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form__group">
+                        <select id="inputState" class="form-select">
+                            <option selected="">Patient type</option>
+                            <option>New Patient</option>
+                            <option>Existing Patient</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <select id="inputState" class="form-select">
+                            <option selected="">Service</option>
+                            <option>General Dentistry</option>
+                            <option>Cosmetic Dentistry</option>
+                            <option>Advanced Dentistry</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
                     </div>
                 </div>
-                <div class="form">
-                    <h6>Stay in Touch</h6>
-                    <p>Fill the form and we’ll reach out to you asap.</p>
-                    <form action="">
-                        <div class="form__group">
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div class="form__group">
-                            <input type="number" placeholder="Contact Number">
-                        </div>
-                        <button class="button">Get a call</button>
-                    </form>
+                <button class="button" onclick="window.location.href=''">Book Now</button>
+            </form>
+            <div class="footer__wrap" id="contact">
+                <div class="uk-grid uk-child-width-1-4@m uk-child-width-1-2@s uk-flex-between@s">
+                    <div class="col">
+                         <ul class="uk-flex">
+                             <li><a href="https://www.facebook.com/Clinic.in.bharatpur" target="_blank"><span
+                                         uk-icon="icon: facebook"></span></a></li>
+                             <li><a href="tel:+977-056-490860"><span uk-icon="icon: receiver"
+                                         target="_blank"></span></a></li>
+                             <li><a href=""><span uk-icon="icon: whatsapp" target="_blank"></span></a></li>
+                         </ul>
+                     </div>
+                    <div class="col">
+                        <ul>
+                            <li>
+                                <a href="https://maps.app.goo.gl/B7BRfWATss7u237WA" target="_blank">Bharatpur, Nepal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul >
+                            <li><a href="tel:+977-056-490860" target="_blank">056-490860</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><a href="mailto:carewaynepal@gmail.com" target="_blank">carewaynepal@gmail.com</a> </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="footer__bottom uk-text-center uk-margin-medium-top">
-                <span>Ⓒ 2023 Careway Medical</span>
+                <span>Ⓒ 2023 Careway Dental</span>
             </div>
         </div>
     </footer>

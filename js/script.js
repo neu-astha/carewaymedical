@@ -113,6 +113,35 @@ var swiper = new Swiper(".testimonials", {
   },
 });
 
+
+var swiper = new Swiper(".blogs", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  speed: 2000,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".dentalblog.swiper-button-next",
+    prevEl: ".dentalblog.swiper-button-prev",
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    560: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    1024: {
+      slidesPerView: 3,
+    }
+  }
+});
+
 // $('.counter__wrap li').each(function() {
 //   var $this = $(this),
 //       countTo = $this.attr('data-count');

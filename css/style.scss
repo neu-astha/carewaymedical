@@ -415,6 +415,7 @@ header{
         
         position: relative;
         overflow: hidden;
+        pointer-events: none;
 
         video {
             max-width: 100%;
